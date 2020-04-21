@@ -1,6 +1,6 @@
+//-------------------------------------------------------------------------fetch list
+
 const list = document.getElementById('ul-list')
-const imgTag = document.getElementById('img-tag')
-const dogImage = document.getElementById('dog-image')
 
 let fetchWork = function () {
     fetch('https://jsonplaceholder.typicode.com/todos')
@@ -14,6 +14,12 @@ let fetchWork = function () {
         })
 }
 
+document.getElementById("fetchButton").addEventListener("click", fetchWork);
+
+//--------------------------------------------------------------------------fetch image
+
+const imgTag = document.getElementById('img-tag')
+
 let fetchDog = function () {
     fetch('https://dog.ceo/api/breeds/image/random')
         .then(response => response.json())
@@ -21,6 +27,12 @@ let fetchDog = function () {
             imgTag.setAttribute('src', json.message)
         })
 }
+
+document.getElementById("dogFetch").addEventListener("click", fetchDog);
+
+//----------------------------------------------------------------------------xhr image
+
+const dogImage = document.getElementById('dog-image')
 
 let xhrDog = function () {
     var xhrRequest = new XMLHttpRequest()
@@ -32,6 +44,4 @@ let xhrDog = function () {
     xhrRequest.send()
 }
 
-document.getElementById("fetchButton").addEventListener("click", fetchWork);
-document.getElementById("dogFetch").addEventListener("click", fetchDog);
 document.getElementById("xhrButton").addEventListener("click", xhrDog);
