@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    min-height: 100vh;
+    background-color: beige;
+}
+
+.first{
+    min-width: 49%;
+    background-color: cadetblue;
+}
+
+.second{
+    min-width: 49%;
+    background-color: cadetblue;
+}
+
+.buttons{
+    padding: 10px;
+}

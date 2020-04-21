@@ -2,18 +2,35 @@
 
 <head>
     <title>App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <button id='fetchButton'>Button for fetch</button>
-    <button id='dogFetch'>Fetch Dog</button>
-    <button id='xhrButton'>XHR Dog</button>
+    <div class='container'>
+        <div class='first'>
+            <div class='buttons'>
+                <button id='fetchButton'>Button for fetch</button>
+            </div>
+            <div class='buttons'>
+                <button id='dogFetch'>Fetch Dog</button>
+            </div>
+            <div class='buttons'>
+                <button id='xhrButton'>XHR Dog</button>
+            </div>
+            <div class='buttons'>
+                <button id='varButton'>Var Button</button>
+            </div>
+            <div class='buttons'>
+                <button id='letButton'>Let Button</button>
+            </div>
+        </div>
 
-    <ul id='ul-list'></ul>
-    <img id='img-tag'>
-    <img id='dog-image'>
-
+        <div class='second'>
+            <ul id='ul-list'></ul>
+            <div id='img-div'></div>
+        </div>
+    </div>
 
 
     <script src='script.js'></script>
